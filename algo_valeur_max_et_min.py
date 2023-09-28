@@ -1,6 +1,6 @@
-for i in range(31) :
+for i in range(31):
     temperature = float(input("Veuillez entrer une température "))
-    if(i === 0) :
+    if (i == 0):
         valeur_basse =temperature
         valeur_haute = temperature
     if(temperature < valeur_basse):
