@@ -3,10 +3,7 @@ def saisie_valeurs() :
     for i in range(3):
         valeur = float(input(f"entrer le temps N°{i + 1} "))
         groupe4.append(valeur)
-        print(groupe4)
     return groupe4
-
-tableau_temps = saisie_valeurs()
 
 def conversion_temps(tableau_temps):
     tableau_secondes = []
@@ -27,5 +24,13 @@ def meilleur_temps(tableau_secondes):
             meilleur_temps = temps
     return meilleur_temps
 
+def print_minutes_secondes(meilleur_temps):
+    print(meilleur_temps)
+    minutes = meilleur_temps // 60
+    secondes = meilleur_temps - 60
+    print(f"Le meilleur temps est de {minutes} minute et {secondes} secondes.")
+
+tableau_temps = saisie_valeurs()
 tableau_secondes = conversion_temps(tableau_temps)
-print(str(meilleur_temps(tableau_secondes)) + " secondes est le meilleur temps")
+meilleur_temps = meilleur_temps(tableau_secondes)
+print_minutes_secondes(meilleur_temps)
