@@ -25,7 +25,6 @@ def meilleur_temps(tableau_secondes):
     return meilleur_temps
 
 def print_minutes_secondes(meilleur_temps):
-    print(meilleur_temps)
     minutes = meilleur_temps // 60
     secondes = meilleur_temps - 60
     print(f"Le meilleur temps est de {minutes} minute et {secondes} secondes.")
