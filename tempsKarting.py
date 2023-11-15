@@ -30,6 +30,7 @@ def conversion_temps(tableau_temps):
         else:
             secondes = round(minutes, 2)
         tableau_secondes.append(secondes)
+        print(tableau_secondes)
     return tableau_secondes
 
 
